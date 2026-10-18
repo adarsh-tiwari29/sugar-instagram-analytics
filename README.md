@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 Instagram Performance Analytics – Sugar Cosmetics
+# Instagram Performance Analytics – Sugar Cosmetics
 
 **Analysing 50,000 Instagram posts to find out what actually drives engagement and follower growth.**
 
@@ -15,15 +15,15 @@
 
 ---
 
-## 🔗 Live demo
+## Live demo
 
 👉 **[sugar-instagram-analytics.streamlit.app](https://sugar-instagram-analytics.streamlit.app/)**
 
-## 📌 About the project
+## About the project
 
 This is a data analyst project done for **Labmentrix**. It covers **50,000 Sugar Cosmetics Instagram posts** from 19 Apr 2024 to 19 Apr 2025. The data is cleaned and feature-engineered in Python, then shown in an interactive **Streamlit** dashboard with cross-filtering (Streamlit was approved in place of Tableau). The project also includes a 10-slide stakeholder presentation and a written insights report with strategic recommendations.
 
-## 📈 Headline numbers
+## Headline numbers
 
 | Metric | Value |
 |---|---|
@@ -34,7 +34,7 @@ This is a data analyst project done for **Labmentrix**. It covers **50,000 Sugar
 | Comments | **18.5M** |
 | Avg. engagement rate | **18.54%** |
 
-## 💡 Key insights
+## Key insights
 
 - **Likes make up 80.7% of engagement.** Saves (4.8%) and shares (4.4%) are the high-intent actions that matter most to the algorithm, and they are the weakest part of the mix.
 - **The profile converts well, but few people reach it.** Only 3% of reached users visit the profile, yet **29.9% of those visitors follow**. The bottleneck is getting people to the profile.
@@ -44,9 +44,9 @@ This is a data analyst project done for **Labmentrix**. It covers **50,000 Sugar
 - **Paid posts don't beat organic posts** on engagement rate or reach.
 - **Content quality is the real lever.** Every category difference is under 0.4 pp and most aren't statistically significant, so timing, format and hashtags on their own won't move engagement.
 
-📄 Full findings and recommendations: [`reports/insights_summary.md`](reports/insights_summary.md)
+Full findings and recommendations: [`reports/insights_summary.md`](reports/insights_summary.md)
 
-## 🖥️ Dashboard features
+## Dashboard features
 
 | # | Section | What it shows |
 |---|---|---|
@@ -64,7 +64,7 @@ This is a data analyst project done for **Labmentrix**. It covers **50,000 Sugar
 
 **Sidebar filters:** Post Type · Month · Hashtag · Campaign Type · Engagement Source · CSV download of the filtered data
 
-## 🗂️ Project structure
+## Project structure
 
 ```
 Sugar Instagram Analytics/
@@ -86,7 +86,7 @@ Sugar Instagram Analytics/
     └── Sugar_Cosmetics_Instagram_Insights.pdf
 ```
 
-## ⚙️ Run locally
+## Run locally
 
 ```bash
 # 1. Clone the repo
@@ -107,24 +107,24 @@ The dashboard opens at `http://localhost:8501`.
 
 > Optional: `python scripts/data_prep.py` regenerates the cleaned files in `data/processed/`. The app doesn't need this step because it prepares the data itself from the raw CSV.
 
-## 📐 Key definitions
+## Key definitions
 
 - **Total Engagement** = Likes + Comments + Shares + Saves
 - **Engagement Rate (%)** = Total Engagement ÷ Reach × 100 (per post; the KPI is the average across posts)
 - **Post Label** = Post ID | Post Type | Campaign Type | Date (used in place of a caption, since the dataset has none)
 
-## 🧾 Data notes
+## Data notes
 
 - 50,000 rows × 14 columns, with no missing values or duplicates. Reach ≤ Impressions on every row.
 - The post types are **Image, Reel, Story and Video**. There is no Carousel type.
 - Hashtags are stored comma-separated (1–3 per post) and are split into one row per hashtag for analysis.
 - **Gaps:** the dataset has no captions, posting hour, follower count over time or ad spend. The report suggests how to capture each one.
 
-## 🛠️ Tech stack
+## Tech stack
 
 **Python** · **Pandas** · **NumPy** · **Plotly** · **Streamlit** · **OpenPyXL** · deployed on **Streamlit Community Cloud**
 
-## 👤 Author
+## Author
 
 **Adarsh Shrikant Tiwari**
 Data Analyst Intern @ Labmentrix
